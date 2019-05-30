@@ -1,3 +1,9 @@
+if issue come related to heap memory allocation use below command.
+export NODE_OPTIONS=--max-old-space-size=8000
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
