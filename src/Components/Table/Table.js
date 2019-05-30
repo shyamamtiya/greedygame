@@ -23,7 +23,8 @@ export default class TableComponent extends React.Component {
         title: 'TimeStamp',
         dataIndex: 'timestamp',
         key: 'timestamp',
-        sorter: (a, b) =>  +a.timestamp - +b.timestamp,
+        sorter: (a, b) =>  {
+            return a.timestamp.split('-').join("").split("-").join("") - b.timestamp.split('-').join("").split("-").join("")},
         sortOrder: sortedInfo.columnKey === 'timestamp' && sortedInfo.order,
       },
       {
